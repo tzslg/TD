@@ -7,24 +7,29 @@ Official implementation of the paper:
 <img width="800" alt="TD illustration" src="https://github.com/user-attachments/assets/890ad71e-d851-47d4-ad10-5c98c4fa3eb9" />
 </p>
 
-## Overview
+## Project Structure
 
-This repository provides the official implementation for our paper:  
-**"TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension"**.
+dumbotd_2: The proposed method TD.
 
-- The `dumbotd_2` folder contains the implementation of our proposed TD protocol.
-- The `dumbotd` and `dumbotd_1` folders are included for testing purposes only.
-
-Our implementation is heavily based on [Dumbo_NG](https://github.com/fascy/Dumbo_NG). Please refer to their codebase for further technical details and background.
-
+dumbotd and dumbotd_1: Other variants or testing baselines for comparison.
 
 ## Clone the Repository
 ```bash
 git clone https://github.com/tzslg/TD.git
 cd TD
 ```
+
+## Requirements
+Python 3.8
+
+Ubuntu 18.04 LTS
+
+Other dependencies listed below
+
 ## Install Environment
-### To run the benchmarks on your local machine (Ubuntu 18.04 LTS), install all dependencies as follows:
+> Note: Our implementations are heavily based on [Dumbo_NG](https://github.com/fascy/Dumbo_NG). Please refer to their codebase for further details.
+
+### Dependencies:
 ```bash
 sudo apt-get update
 sudo apt-get -y install make bison flex libgmp-dev libmpc-dev python3 python3-dev python3-pip libssl-dev
