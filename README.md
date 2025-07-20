@@ -20,7 +20,7 @@ cd TD
 ## Requirements
 Python 3.8.10
 
-Ubuntu 18.04 LTS
+Ubuntu-20.04.3-desktop-amd64
 
 Other dependencies listed below
 
