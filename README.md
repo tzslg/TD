@@ -62,14 +62,11 @@ sudo pip3 install gevent setuptools gevent numpy ecdsa pysocks gmpy2 zfec gipc p
 ```
 ### Quick Start
 
-To run **TD** for 50 epochs with a batch size of 2000 transactions:
+To run **TD** locally:
 
-1. Edit the `run_local_network_test.sh` script to start the nodes with the following snippet (replace the node start commands as needed):
-
+1. Modify the `run_local_network_test.sh` script by replacing the node startup section with the following:
    ```bash
-   echo "start.sh <N> <F> <B> <K>"
    rm -rf ./log/
-   
    killall python3
    i=0
    while [ "$i" -lt $1 ]; do
@@ -78,12 +75,12 @@ To run **TD** for 50 epochs with a batch size of 2000 transactions:
        i=$(( i + 1 ))
    done
     ```
-
-2. Then execute the script:
+2. Then execute the script with your desired parameters.
+   For example:
    ```bash
       ./run_local_network_test.sh 4 1 2000 50
    ```
-This will launch a local test of TD with 4 nodes, 1 tolerated faulty node (f=1), a batch size of 2000 transactions, and run for 50 epochs.
+This will launch a local test of TD with 4 nodes, 1 tolerated faulty node (f=1), a batch size of 2000 transactions, and run for 50-epoch warm up.
 
 ### Run on AWS Cloud Servers:
 Example: Setting up remote nodes and starting protocols
