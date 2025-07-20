@@ -1,6 +1,7 @@
 # TD
 
-Implementation of **TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension**.
+Official implementation of the paper:  
+**TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension**
 
 ## Acknowledgements
 
