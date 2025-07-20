@@ -66,23 +66,23 @@ To run **TD** for 50 epochs with a batch size of 2000 transactions:
 
 1. Edit the `run_local_network_test.sh` script to start the nodes with the following snippet (replace the node start commands as needed):
 
-```bash
-echo "start.sh <N> <F> <B> <K>"
-rm -rf ./log/
-
-killall python3
-i=0
-while [ "$i" -lt $1 ]; do
-    echo "start node $i..."
-    python3 run_socket_node.py --sid 'sidA' --id $i --N $1 --f $2 --B $3 --S 100 --P "td_2" --D True --O True --C $4 &
-    i=$(( i + 1 ))
-done
- ```
+   ```bash
+   echo "start.sh <N> <F> <B> <K>"
+   rm -rf ./log/
+   
+   killall python3
+   i=0
+   while [ "$i" -lt $1 ]; do
+       echo "start node $i..."
+       python3 run_socket_node.py --sid 'sidA' --id $i --N $1 --f $2 --B $3 --S 100 --P "td_2" --D True --O True --C $4 &
+       i=$(( i + 1 ))
+   done
+    ```
 
 2. Then execute the script:
-```bash
-   ./run_local_network_test.sh 4 1 2000 50
-```
+   ```bash
+      ./run_local_network_test.sh 4 1 2000 50
+   ```
 This will launch a local test of TD with 4 nodes, 1 tolerated faulty node (f=1), a batch size of 2000 transactions, and run for 50 epochs.
 
 ### Run on AWS Cloud Servers:
