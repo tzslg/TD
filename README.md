@@ -8,7 +8,7 @@ Official implementation of the paper:
 ```bash
 git clone https://github.com/tzslg/TD.git
 cd TD
-'''
+```
 
 ## Acknowledgements
 
