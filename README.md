@@ -3,15 +3,27 @@
 Official implementation of the paper:  
 **TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension**
 
+<p align="center">
 <img width="800" alt="TD illustration" src="https://github.com/user-attachments/assets/890ad71e-d851-47d4-ad10-5c98c4fa3eb9" />
+</p>
 
-## Clone
+## Overview
+
+This repository provides the official implementation for our paper:  
+**"TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension"**.
+
+- The `dumbotd_2` folder contains the implementation of our proposed TD protocol.
+- The `dumbotd` and `dumbotd_1` folders are included for testing purposes only.
+
+Our implementation is heavily based on [Dumbo_NG](https://github.com/fascy/Dumbo_NG). Please refer to their codebase for further technical details and background.
+
+
+## Clone the Repository
 ```bash
 git clone https://github.com/tzslg/TD.git
 cd TD
 ```
 ## Install Environment
-> Note: Our implementations are heavily based on the [Dumbo_NG](https://github.com/fascy/Dumbo_NG). Please also refer to their codebase for further details.
 ### To run the benchmarks on your local machine (Ubuntu 18.04 LTS), install all dependencies as follows:
 ```bash
 sudo apt-get update
@@ -48,6 +60,13 @@ python3 -m pip install --upgrade pip
 sudo pip3 install gevent setuptools gevent numpy ecdsa pysocks gmpy2 zfec gipc pycrypto coincurve
 ```
 ### Run on AWS Cloud Servers:
+Example: Setting up remote nodes and starting protocols
+Configure IPs and credentials
+
+Distribute hosts.config to all nodes
+
+Remotely launch the TD protocol across servers
+
 #### Upload hosts.config to AWS servers:
 ```bash
 #!/bin/bash
