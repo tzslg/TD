@@ -144,13 +144,13 @@ We sincerely thank the authors of the following open-source projects. Their exce
 
 ## Citation
 If you find our work useful, please kindly cite as:
-
+```
 @article{Pang2025TD,
   title={TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension},
   author={Zengyu Pang, Ligen Shi, Hua Xiang},
   year={2025}
 }
-
+```
 ## Contact
 If you have any questions or suggestions, feel free to contact:
 
