@@ -18,7 +18,7 @@ cd TD
 ```
 
 ## Requirements
-Python 3.8
+Python 3.10
 
 Ubuntu 18.04 LTS
 
