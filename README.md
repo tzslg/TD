@@ -3,12 +3,12 @@
 Official implementation of the paper:  
 **TD: Faster Asynchronous BFT Protocol without Throughput-Latency Tension**
 
-<img width="1535" height="1264" alt="image" src="https://github.com/user-attachments/assets/890ad71e-d851-47d4-ad10-5c98c4fa3eb9" />
+<img width="800" alt="TD illustration" src="https://github.com/user-attachments/assets/890ad71e-d851-47d4-ad10-5c98c4fa3eb9" />
 
-Clone
-[git clone https://github.com/tzslg/TD.git](https://github.com/tzslg/TD.git)
+```bash
+git clone https://github.com/tzslg/TD.git
 cd TD
-
+'''
 
 ## Acknowledgements
 
