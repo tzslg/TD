@@ -18,7 +18,7 @@ cd TD
 ```
 
 ## Requirements
-Python 3.10
+Python 3.8.10
 
 Ubuntu 18.04 LTS
 
@@ -76,6 +76,7 @@ To run **TD** locally:
    done
     ```
 2. Then execute the script with your desired parameters.
+
    For example:
    ```bash
       ./run_local_network_test.sh 4 1 2000 50
