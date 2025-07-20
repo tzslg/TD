@@ -25,8 +25,6 @@ Ubuntu 18.04 LTS
 Other dependencies listed below
 
 ## Install Environment
-> Note: Our implementations are heavily based on [Dumbo_NG](https://github.com/fascy/Dumbo_NG). Please refer to their codebase for further details.
-
 ### Dependencies:
 ```bash
 sudo apt-get update
