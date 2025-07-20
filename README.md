@@ -122,8 +122,8 @@ i=0;while [ $i -le $(( N-1 )) ]; do
 done
 
 i=0;while [ $i -le $(( N-1 )) ]; do
-    ssh -o "StrictHostKeyChecking no" -i ${pem[i]} ubuntu@${pubIPsVar[i]} "rm /home/ubuntu/AAAA/hosts.config"
-    scp -i ${pem[i]} tmp_hosts.config ubuntu@${pubIPsVar[i]}:/home/ubuntu/AAAA/hosts.config &
+    ssh -o "StrictHostKeyChecking no" -i ${pem[i]} ubuntu@${pubIPsVar[i]} "rm /home/ubuntu/TD/hosts.config"
+    scp -i ${pem[i]} tmp_hosts.config ubuntu@${pubIPsVar[i]}:/home/ubuntu/TD/hosts.config &
     i=$(( i+1 ))
 done
 ```
@@ -138,7 +138,7 @@ done
 #### Start protocol on all servers:
 ```bash
 i=0;while [ $i -le $(( N-1 )) ]; do
-    ssh -o "StrictHostKeyChecking no" -i ${pem[i]} ubuntu@${pubIPsVar[i]} "rm -rf /home/ubuntu/AAAA/log/"
+    ssh -o "StrictHostKeyChecking no" -i ${pem[i]} ubuntu@${pubIPsVar[i]} "rm -rf /home/ubuntu/TD/log/"
     i=$(( i+1 ))
 done
 
@@ -147,7 +147,7 @@ i=0;while [ $i -le $(( N-1 )) ]; do
     ssh -i ${pem[i]} ubuntu@${pubIPsVar[i]} "
     export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib; 
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib; 
-    cd /home/ubuntu/AAAA; 
+    cd /home/ubuntu/TD; 
     nohup python3 run_socket_node.py --sid 'sidA' --id $i --N $N --f $(((N-1)/3)) --B 1000 --S 100 --P "td_2"  --C 20 > node-$i.out" &
     i=$((i+1))
 done
@@ -156,7 +156,7 @@ done
 ```bash
 # Download logs from all remote AWS servers to your local PC
 i=0;while [ $i -le $(( N-1 )) ]; do
-    scp -i ${pem[i]} ubuntu@${pubIPsVar[i]}:/home/ubuntu/AAAA/log/consensus-node-$i.log node-$i.log &
+    scp -i ${pem[i]} ubuntu@${pubIPsVar[i]}:/home/ubuntu/TD/log/consensus-node-$i.log node-$i.log &
     i=$(( i+1 ))
 done
 ```
