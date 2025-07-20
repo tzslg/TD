@@ -9,9 +9,7 @@ Official implementation of the paper:
 
 ## Project Structure
 
-dumbotd_2: The proposed method TD.
-
-dumbotd and dumbotd_1: Other variants or testing baselines for comparison.
+dumbotd_2 contains the proposed method TD（dumbotd and dumbotd_1are for testing purposes）
 
 ## Clone the Repository
 ```bash
