@@ -18,11 +18,14 @@ cd TD
 ```
 
 ## Requirements
-- Local: Python 3.10 on Ubuntu 20.04.3-desktop-amd64  
-- AWS: Ubuntu 20.04.3 LTS instances (2 vCPUs, 4 GB RAM, 10 Gbps bandwidth).  
-  Performance is evaluated at three scales by varying the node count: n = 4, 16, and 64.
 
-Other dependencies listed below
+- **Local Environment**: Ubuntu 20.04.3-desktop-amd64, Python 3.10  
+- **AWS Environment**: Ubuntu 20.04.3 LTS, Python 3.10  
+  - Instance Specifications: 2 vCPUs, 4 GB RAM, 10 Gbps bandwidth
+
+- **Performance Evaluation**: Tested at 3 scales with node counts: 4, 16, and 64
+
+Other dependencies are listed below.
 
 ## Install Environment
 ### Dependencies:
