@@ -18,9 +18,9 @@ cd TD
 ```
 
 ## Requirements
-Python 3.8.10
-
-Ubuntu-20.04.3-desktop-amd64
+- Local: Python 3.10 on Ubuntu 20.04.3-desktop-amd64  
+- AWS: Ubuntu 20.04.3 LTS instances (2 vCPUs, 4 GB RAM, 10 Gbps bandwidth).  
+  Performance is evaluated at three scales by varying the node count: n = 4, 16, and 64.
 
 Other dependencies listed below
 
@@ -144,6 +144,7 @@ priIPsVar=([0]='172.31.83.243'
 [2]='172.31.42.162'
 [3]='172.31.3.77'
 )
+# xxx.pem is the SSH private key used for the EC2 instance in AWS.
 pem=(
 [0]="math1.pem"
 [1]="math2.pem"
