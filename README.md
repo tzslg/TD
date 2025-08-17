@@ -64,33 +64,6 @@ python3 -m pip install --upgrade pip
 sudo pip3 install gevent setuptools gevent numpy ecdsa pysocks gmpy2 zfec gipc pycrypto coincurve
 ```
 
-Python 3.10 Migration Notes
-
-Base64 Encoding/Decoding
-
-❌ Old (removed in Python 3.10):
-
-from base64 import encodestring, decodestring
-
-encodestring(data)
-
-decodestring(encoded)
-
-
-✅ New (recommended):
-
-import base64
-
-base64.b64encode(data)
-
-base64.b64decode(encoded)
-
-
-✅ If you want minimal changes, use aliases:
-
-from base64 import encodebytes as encodestring, decodebytes as decodestring
-
-
 ### Quick Start
 
 To run **TD** locally:
