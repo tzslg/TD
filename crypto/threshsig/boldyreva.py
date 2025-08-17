@@ -8,7 +8,8 @@ Dependencies:
 """
 try:
     from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, pair
-    from base64 import encodestring, decodestring
+    # from base64 import encodestring, decodestring
+    from base64 import encodebytes as encodestring, decodebytes as decodestring
     from operator import mul
     from functools import reduce
 except Exception as err:
