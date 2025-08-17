@@ -71,14 +71,18 @@ Base64 Encoding/Decoding
 ❌ Old (removed in Python 3.10):
 
 from base64 import encodestring, decodestring
+
 encodestring(data)
+
 decodestring(encoded)
 
 
 ✅ New (recommended):
 
 import base64
+
 base64.b64encode(data)
+
 base64.b64decode(encoded)
 
 
