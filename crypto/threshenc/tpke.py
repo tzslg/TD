@@ -1,10 +1,11 @@
 try:
     from charm.toolbox.pairinggroup import PairingGroup, ZR, G1, G2, pair
     from functools import reduce
-    from base64 import encodestring, decodestring
+    #from base64 import encodestring, decodestring
+    from base64 import encodebytes as encodestring, decodebytes as decodestring
     from operator import mul
     from Crypto.Hash import SHA256
-    from Crypto import Random
+    #from Crypto import Random
     from Crypto.Cipher import AES
 except Exception as err:
   print(err)
